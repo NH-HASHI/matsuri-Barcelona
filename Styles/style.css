@@ -328,6 +328,7 @@ body{
 }
 .sponsor{
   width: 250px;
+  align-self: center;
 }
 .hero-3{
   display: flex;
