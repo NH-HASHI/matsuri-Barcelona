@@ -323,7 +323,12 @@ body{
   color: transparent;
   -webkit-text-stroke: 1.9648317098617554px #c1272d;
 }
-
+.sponsor-1{
+  width: 500px;
+}
+.sponsor{
+  width: 250px;
+}
 .hero-3{
   display: flex;
   flex-direction: row;
