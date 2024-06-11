@@ -677,6 +677,9 @@ body{
   flex-shrink: 0;
   position: relative;
 }
+.sponsor{
+  align-self: center;
+}
 .round-button-text{
   gap: 8px;
   display: flex;
