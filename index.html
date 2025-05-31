@@ -6,11 +6,24 @@
   <title>MASTURI 2025</title>
   <script>
     function loadMobileVersion() {
-      if (window.innerWidth <= 720) {
+      // Redirect only if on desktop version and not already on mobile
+      const isMobile = window.innerWidth <= 720;
+      const isAlreadyMobile = window.location.href.includes('/mobile/');
+
+      if (isMobile && !isAlreadyMobile) {
         window.location.href = './public/views/mobile/en/index.html';
       }
     }
-    window.addEventListener('resize', loadMobileVersion);
+    // Check on load
+    document.addEventListener('DOMContentLoaded', loadMobileVersion);
+
+    // Optional: Check on resize
+    window.addEventListener('resize', () => {
+      // Only redirect if just resized to smaller screen
+      if (window.innerWidth <= 720) {
+        loadMobileVersion();
+      }
+    });
   </script>
   <script src = "./public/scripts/shrink.js"></script>
   <link rel="icon" href="./public/images/Logo-azul.png" type="image/png">
