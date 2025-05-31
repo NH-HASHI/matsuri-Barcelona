@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MATSURI 2025</title>
+    <script>
+      let menuOpen = false;
+
+      function toggleMenu() {
+        const icon = document.getElementById("menuIcon");
+        const menu = document.getElementById("mobileMenu");
+        const toggle = document.getElementById("menuToggle");
+
+        menuOpen = !menuOpen;
+
+        if (menuOpen) {
+          icon.src = "../../../../public/images/icons/cross.svg";
+          toggle.classList.add("active");
+          menu.classList.remove("hidden");
+          toggle.classList.add("menu-open");
+        } else {
+          icon.src = "../../../../public/images/icons/3lines.svg";
+          toggle.classList.remove("active");
+          menu.classList.add("hidden");
+          toggle.classList.remove("menu-open");
+        }
+      }
+      function toggleSubmenu(id) {
+        document.getElementById(id).classList.toggle("hidden");
+      }
+
+      function loadMobileVersion() {
+            if (window.innerWidth >= 700) {
+                window.location.href = '../../../../public/views/desktop/es/voluntario.html';
+            }
+        }
+      window.addEventListener("resize", loadMobileVersion);
+    </script>
+    <script src = "../../../../public/scripts/shrink.js"></script>
+    <link rel="icon" href="../../../../public/images/Logo-azul.png" type="image/png" />
+    <link rel="stylesheet" href="../../../../public/styles/mobile/menu-drop.css" />
+    <link rel="stylesheet" href="../../../../public/styles/mobile/mobile-footer.css" />
+    <link rel="stylesheet" href="../../../../public/styles/mobile/mobile-recurring.css" />
+    <link rel="stylesheet" href="../../../../public/styles/mobile/volunteer.css" />
+    <link rel="stylesheet" href="../../../../public/styles/mobile/faq.css" />
+  </head>
+
+  <body>
+    <header class="mobile-header">
+      <div class="header-top">
+        <img src="../../../../public/images/Logo.png" alt="Matsuri Logo" class="logo" />
+        <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+          Menu
+          <img
+            id="menuIcon"
+            src="../../../../public/images/icons/3lines.svg"
+            alt="Menu Icon"
+            class="menu-icon"
+          />
+        </div>
+      </div>
+
+      <nav class="mobile-menu hidden" id="mobileMenu">
+        <ul>
+          <li class="section-header">
+            <button
+              class="submenu-toggle"
+              onclick="toggleSubmenu('activities')"
+            >
+              Actividades 2025
+              <img src="../../../../public/images/icons/down-arrow.svg" alt="" />
+            </button>
+            <ul class="submenu hidden" id="activities">
+              <li><a href="../../../../public/views/mobile/es/proximamente.html">Programa 2025</a></li>
+              <li><a href="../../../../public/views/mobile/es/proximamente.html">Las Artistas</a></li>
+              <li><a href="../../../../public/views/mobile/es/proximamente.html">Puestos</a></li>
+              <li><a href="../../../../public/views/mobile/es/proximamente.html">Para Niños</a></li>
+              <li><a href="../../../../public/views/mobile/es/proximamente.html">Gastronómia</a></li>
+            </ul>
+          </li>
+          <li><a href="../../../../public/views/mobile/es/proximamente.html">Sobre MATSURI</a></li>
+          <li><a href="../../../../public/views/mobile/es/proximamente.html">Cómo Llegaar</a></li>
+          <li><a href="../../../../public/views/mobile/es/proximamente.html">Contactos</a></li>
+          <li class="highlight">
+            <button class="submenu-toggle" onclick="toggleSubmenu('support')">
+              Apoyanos
+              <img src="../../../../public/images/icons/down-arrow.svg" alt="" />
+            </button>
+            <ul class="submenu hidden" id="support">
+              <li><a href="../../../../public/views/mobile/es/voluntario.html">Voluntariado</a></li>
+              <li><a href="../../../../public/views/mobile/es/proximamente.html">Crowdfunding</a></li>
+              <li><a href="../../../../public/views/mobile/es/proximamente.html">Patricionadores</a></li>
+            </ul>
+          </li>
+          <li id="ticket-link">
+            <a href="https://entradium.com/es/events/festival-matsuri-barcelona-2025/sessions/21-06-2025-12-00-moll-de-la-fusta?fbclid=PAZXh0bgNhZW0CMTEAAaeVvUXKt_AFzm_dH2RPrRsgsZ8AEohvJxk3TXWqBkMB8Q2ULgurOON9yG9Pdg_aem_RIQ-NCzzesG2P1H8oLE_5g"> Get Your Ticket </a>
+          </li>
+        </ul>
+        <div class="language-selector">
+          <a href="../../../../public/views/mobile/en/index.html">ENGLISH</a>
+          <a href="../../../../public/views/mobile/es/index.html">CASTELLANO</a>
+        </div>
+      </nav>
+    </header>
+    <div class="divider"></div>
+    <div class="page-header-container">
+      <h1 style="text-align: center">VOLUNTARÍA CON NOSOTROS</h1>
+      <h3 class="page-sub-description">
+       ¡Siempre estamos buscando ayuda para el día del MATSURI!
+      </h3>
+    </div>
+    <div class="volunteers-overview-section">
+      <h1>¿Qué hacen los voluntarios en el MATSURI?</h1>
+      <a
+        class="button-circular"
+        href="../../../../../public/views/desktop/es/proximamente.html"
+      >
+        <div class="button-content">
+          <div class="button-text">Más sobre el MATSURI</div>
+          <img
+            class="rightArrow"
+            src="../../../../public/images/icons/right-arrow.svg"
+          />
+        </div>
+      </a>
+      <div class="overview-text">
+        <h2>Voluntariado en el MATSURI</h2>
+        <p>
+          El objetivo principal del MATSURI es proporcionar un "lugar" y una "experiencia" para que todos puedan intercambiar entendimientos culturales e inspirar a los niños con los valores tradicionales japoneses. Con el crecimiento del MATSURI cada año, solicitamos ayuda a los voluntarios para llevar a cabo el evento con nosotros.
+          El día del festival, no solo los miembros de la ACJ, que trabajan gratuitamente, sino también muchos voluntarios nos ayudan cada año. En 2024, contamos con más de 140 voluntarios, incluyendo estudiantes de intercambio de Japón.
+        </p>
+      </div>
+    </div>
+    <div class="register-section">
+      <h2 style="text-align: center">
+       Regístrate como voluntario a través de este formulario
+      </h2>
+      <div class="contact-form">
+        <div class="contact-text">
+          <p>
+            Para preguntas sobre el voluntariado, por favor escribe a 
+            <a
+              href="mailto:voluntarios@acjm.es"
+              style="text-decoration: underline"
+              class="email"
+              >voluntarios@acjm.es</a
+            >
+          </p>
+        </div>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSc3HzJ2zRU8xzoYPTqykrntnpcrsu8iKpTK-nLytjYSCM32Cw/viewform?embedded=true"
+          width="360"
+          height="600"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          >Loading…</iframe
+        >
+      </div>
+    </div>
+    <div class="volunteer-faq">
+        <div class="faq-section">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="shrink-section">
+
+                <div class="shrink-row">
+                    <button class="shrink-show-always" onclick="toggleSection(this)">
+                        <div class="shrink-title">¿Qué debo usar / traer el día de MATSURI como voluntaria?
+                        </div>
+                        <div class="plus-minus-sign-holder">
+                            <img class="plus-sign" src="../../../../public/images/icons/plus-icon.svg" alt="+">
+                            <img class="minus-sign" src="../../../../public/images/icons/minus-icon.svg" alt="-">
+                        </div>
+                    </button>
+                    <div class="shrink-content">
+                        <div class="shrink-answer">
+                            <p class="shrink-answer-text">
+                                Todos los voluntarios recibirán una camiseta de voluntario 2025 para usar durante el día del evento. Se espera que haga calor el día del MATSURI, por lo que recomendamos traer protector solar, sombrero y toallas. Además, recomendamos usar ropa y calzado cómodos, ya que es posible que deban caminar mucho por el recinto.
+                                <b>
+                                   Tenga en cuenta que Matsuri no se hace responsable de las pérdidas de sus pertenencias personales durante el evento.
+                                </b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shrink-row">
+                    <button class="shrink-show-always" onclick="toggleSection(this)">
+                        <div class="shrink-title">¿Hay descansos durante mis turnos?</div>
+                        <div class="plus-minus-sign-holder">
+                            <img class="plus-sign" src="../../../../public/images/icons/plus-icon.svg" alt="+">
+                            <img class="minus-sign" src="../../../../public/images/icons/minus-icon.svg" alt="-">
+                        </div>
+                    </button>
+                    <div class="shrink-content">
+                        <div class="shrink-answer">
+                            <p class="shrink-answer-text">
+                              Sí, los descansos contarán con indicaciones de los líderes de sección, que incluyen agua y refrigerios (onigiris/bolas de arroz).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shrink-row">
+                    <button class="shrink-show-always" onclick="toggleSection(this)">
+                        <div class="shrink-title">No hablo con fluidez el calatán, el español ni el japonés.</div>
+                        <div class="plus-minus-sign-holder">
+                            <img class="plus-sign" src="../../../../public/images/icons/plus-icon.svg" alt="+">
+                            <img class="minus-sign" src="../../../../public/images/icons/minus-icon.svg" alt="-">
+                        </div>
+                    </button>
+                    <div class="shrink-content">
+                        <div class="shrink-answer">
+                            <p class="shrink-answer-text">
+                                ¡No se preocupen! Los asignaremos a los trabajos según su dominio del idioma. Esto significa que habrá otros voluntarios en el mismo stand para ayudarles con la comunicación.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shrink-row">
+                    <button class="shrink-show-always" onclick="toggleSection(this)">
+                        <div class="shrink-title">Es mi primera vez como voluntario en MATSURI, ¿qué trabajos se esperan?</div>
+                        <div class="plus-minus-sign-holder">
+                            <img class="plus-sign" src="../../../../public/images/icons/plus-icon.svg" alt="+">
+                            <img class="minus-sign" src="../../../../public/images/icons/minus-icon.svg" alt="-">
+                        </div>
+                    </button>
+                    <div class="shrink-content">
+                        <div class="shrink-answer">
+                            <p class="shrink-answer-text">
+                                Los voluntarios pueden ayudar con diversas tareas, como vender bebidas, interactuar con los clientes en el puesto infantil, asistir en la entrada, etc. Consulte el formulario superior para ver la sección de trabajos deseados.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shrink-row">
+                    <button class="shrink-show-always" onclick="toggleSection(this)">
+                        <div class="shrink-title">¿Qué debo hacer el día del MATSURI?</div>
+                        <div class="plus-minus-sign-holder">
+                            <img class="plus-sign" src="../../../../public/images/icons/plus-icon.svg" alt="+">
+                            <img class="minus-sign" src="../../../../public/images/icons/minus-icon.svg" alt="-">
+                        </div>
+                    </button>
+                    <div class="shrink-content">
+                        <div class="shrink-answer">
+                            <p class="shrink-answer-text">
+                                Se confirmarán más detalles más cerca del evento, pero antes de empezar a trabajar, acérquese al puesto de información para recibir su camiseta, etiqueta con su nombre y boleto para bebida.
+                                La salida se realizará en cada puesto, así que consulte con el responsable de sección para obtener más información.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shrink-row">
+                    <button class="shrink-show-always" onclick="toggleSection(this)">
+                        <div class="shrink-title">¿Qué hago si quiero modificar los turnos o cancelarlos?</div>
+                        <div class="plus-minus-sign-holder">
+                            <img class="plus-sign" src="../../../../public/images/icons/plus-icon.svg" alt="+">
+                            <img class="minus-sign" src="../../../../public/images/icons/minus-icon.svg" alt="-">
+                        </div>
+                    </button>
+                    <div class="shrink-content">
+                        <div class="shrink-answer">
+                            <p class="shrink-answer-text">
+                                Por favor, póngase en contacto al correo electrónico:
+                                <a href="mailto:voluntarios@acjm.es" class="email">voluntarios@acjm.es</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="footer">
+    <div class="footer-top">
+      <a href="../../../../public/views/mobile/en/index.html">
+        <img src="../../../../public/images/Logo.png" alt="Matsuri Logo" class="logo" />  
+      </a>
+      <a class="button-circular" href="https://entradium.com/es/events/festival-matsuri-barcelona-2025/sessions/21-06-2025-12-00-moll-de-la-fusta?fbclid=PAZXh0bgNhZW0CMTEAAaeVvUXKt_AFzm_dH2RPrRsgsZ8AEohvJxk3TXWqBkMB8Q2ULgurOON9yG9Pdg_aem_RIQ-NCzzesG2P1H8oLE_5g">
+        <div class="button-content">
+          <div class="button-text" style="font-weight: 800">
+            Consigue Tu Entrada Ahora
+          </div>
+          <img class
+            ="rightArrow"
+            src="../../../../public/images/icons/right-arrow.svg"
+          />
+        </div>
+      </a>
+      <div class="sns-icon">
+        <a href="https://www.instagram.com/matsuribarcelona/">
+          <img src="../../../../public/images/icons/insta.svg" alt="" />
+        </a>
+        <a href="https://www.youtube.com/@MATSURI-Barcelona/videos">
+          <img src="../../../../public/images/icons/youtube.svg" alt="" />
+        </a>
+        <a href="https://www.facebook.com/matsurijapaninbarcelona">
+          <img src="../../../../public/images/icons/facebook.svg" alt="" />
+        </a>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="footer-middle">
+      <div class="footer-columns">
+        <div class="footer-content">
+          <div class="big-paragraph">Activdades 2025</div>
+          <div class="sub-activities-frame">
+            <a href="../../../../public/views/mobile/es/proximamente.html" class="sub-activities-content">Programa 2025</a>
+            <a href="../../../../public/views/mobile/es/proximamente.html" class="sub-activities-content">Las Artistas</a>
+            <a href="../../../../public/views/mobile/es/proximamente.html" class="sub-activities-content">Para Niños</a>
+            <a href="../../../../public/views/mobile/es/proximamente.html" class="sub-activities-content"> Puestos</a>
+            <a href="../../../../public/views/mobile/es/proximamente.html" class="sub-activities-content">Gastronómia</a>
+          </div>
+          <br /><br />
+          <div class="sub-activities-frame">
+            <a href="../../../../public/views/mobile/es/proximamente.html" class="sub-activities-content">Sobre MATSURI</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-columns">
+        <div class="footer-content">
+          <div class="big-paragraph">Apoyanos</div>
+          <div class="sub-activities-frame">
+            <a
+              href="../../../../public/views/mobile/en/volunteer.html"
+              class="sub-activities-content"
+              >Voluntariado</a
+            >
+            <a href="../../../../public/views/mobile/es/proximamente.html" class="sub-activities-content">Crowdfunding</a>
+            <a href="../../../../public/views/mobile/es/proximamente.html" class="sub-activities-content">Patricionadores</a>
+          </div>
+          <br /><a href="#" class="sub-activities-content">Cómo Llegar</a>
+          <br /><a
+            href="../../../../public/views/mobile/es/proximamente.html"
+            class="sub-activities-content"
+            >Contact Us</a
+          >
+          <br />
+          <div class="sub-activities-frame">
+            <a href="../../../../public/views/mobile/es/proximamente.html" class="sub-activities-content">Política de Privacidad</a>
+            <a href="../../../../public/views/mobile/es/proximamente.html" class="sub-activities-content">Política de Cookies</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="lower-footer">
+      <div class="footer-row">
+        <img src="../../../../public/images/bcn-logo/bcn-blue1.png" alt="" />
+        <p class="name-holder">Diseñado por <span class="name">Elly</span></p>
+        <img src="../../../../public/images/bcn-logo/bcn-blue2.png" alt="" />
+      </div>
+
+      <div class="footer-row">
+        <img src="../../../../public/images/bcn-logo/bcn-blue3.png" alt="" />
+        <p class="name-holder">
+          Construido por <span class="name">Naoki y Austin</span>
+        </p>
+        <img src="../../../../public/images/bcn-logo/bcn-blue4.png" alt="" />
+      </div>
+      <h1 class="footer-heading">MATSURI 2025</h1>
+    </div>
+  </div>
+  </body>
+</html>

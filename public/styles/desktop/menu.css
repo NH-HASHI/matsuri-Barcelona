@@ -1,0 +1,189 @@
+body {
+  overflow-x: hidden;
+}
+.header-section {
+  background: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+.menu-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  align-self: stretch;
+  position: relative;
+  padding: 10px 0px;
+  width: 100%;
+}
+.logo {
+  width: 210px;
+  position: relative;
+  object-fit: cover;
+}
+
+.menu-section {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+.mdi-chevron-down {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.supportUs {
+  border-color: transparent;
+  border-width: 1px;
+  flex-direction: row;
+  gap: 2px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  display: inline-block;
+}
+
+.langOption {
+  border-radius: 40px;
+  border-style: solid;
+  border-color: #221c43;
+  border-width: 1px;
+  flex-direction: row;
+  gap: 2px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.menu-section {
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.menu li {
+  display: inline-block;
+}
+.menu li a,
+.language-dropdown a {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 10px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  color: #221c43;
+  text-align: left;
+  font-family: "NotoSansJp-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+}
+
+.menu li a:hover {
+  border-radius: 40px;
+  border-style: solid;
+  border-color: #221c43;
+  border-width: 1px;
+}
+
+.activities,
+.about,
+.langOption {
+  position: relative;
+}
+.activities:hover .activitiesDropContent {
+  display: block;
+}
+.supportUs:hover .supportDropContent {
+  display: block;
+}
+.about:hover .aboutDropContent {
+  display: block;
+}
+.langOption:hover .langDropContent {
+  display: block;
+}
+
+.langDropContent a:hover {
+  border-radius: 40px;
+  border: 1px solid #221c43;
+}
+
+
+.activitiesDropContent,
+.aboutDropContent,
+.supportDropContent {
+  display: none;
+  position: absolute;
+  border-radius: 20px;
+  background-color: #eaeaf4;
+  padding: 32px;
+  gap: 24px;
+  min-width: 250px;
+  z-index: 1;
+}
+.langDropContent {
+  display: none;
+  position: absolute;
+  border-radius: 20px;
+  background-color: #eaeaf4;
+  padding: 10px;
+  gap: 24px;
+  min-width: 20px;
+  z-index: 1;
+}
+.activitiesDropContent a,
+.aboutDropContent a,
+.supportDropContent a,
+.langDropContent a {
+  flex-direction: row;
+  text-align: left;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.dropDivider {
+  border-style: solid;
+  border-color: #221c43;
+  border-width: 1px 0 0 0;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 0px;
+  position: relative;
+  transform-origin: 0 0;
+  text-replace: auto;
+  transform: rotate(0deg) scale(1, 1);
+}
+
+#ticket-enhanced {
+  background-color: #f5cfce;
+  border-radius: 80px;
+  border-style: solid;
+  border-color: #221c43;
+}
+#ticket-enhanced:hover {
+  background-color: #221c43;
+}
+
+#ticket-enhanced:hover a {
+  color: #f5cfce;
+}

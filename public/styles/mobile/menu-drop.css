@@ -1,0 +1,143 @@
+/* === Base Styles === */
+.mobile-header {
+  background-color: #eaeaf4;
+  padding: 1rem;
+  font-family: sans-serif;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+/* === Menu Toggle Button === */
+.menu-toggle {
+  background-color: #f8caca;
+  border: 1px solid #221c43;
+  padding: 10px 16px;
+  border-radius: 12px;
+  color: #221c43;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-toggle.menu-open {
+  background-color: #221c43;
+  color: #f8caca;
+}
+
+/* === Mobile Menu Container === */
+.mobile-menu {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* ⬅️ horizontal centering */
+  text-align: center;
+  transition: max-height 0.4s ease;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;         /* Inherit text color from parent */
+  text-decoration: none;  /* Optional: remove underline */
+}
+
+a:visited {
+  color: inherit;         /* Prevents purple color after visit */
+}
+
+/* === Top-Level Menu Items === */
+#mobileMenu > ul > li {
+  color: #221c43;
+  text-align: left;
+  font-family: "NotoSansJp-Bold", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  position: relative;
+  padding: 16px 20px;
+  border-bottom: 1px solid #221c43;
+  background: transparent;
+  border-radius: 0;
+}
+
+/* === Remove emphasis on Support us === */
+#mobileMenu > ul > li.highlight {
+  background: transparent;
+  border-radius: 0;
+}
+
+/* === Submenu Toggle Buttons === */
+.submenu-toggle {
+  background: none;
+  border: none;
+  color: #221c43;
+  font-family: "NotoSansJp-Bold", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+  width: 100%;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* === Submenu Items === */
+.submenu {
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.submenu li {
+  font-size: 18px;
+  font-weight: 400;
+  color: #444;
+  padding: 8px 24px;
+  font-family: sans-serif;
+}
+
+/* === Language Selector === */
+.language-selector {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.language-selector a {
+  border: 1px solid #221c43;
+  border-radius: 20px;
+  background: #fff;
+  padding: 0.5rem 1rem;
+  color: #d44;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* === Utility === */
+.hidden {
+  display: none;
+}
+
+#ticket-link a {
+  display: inline-block;
+  background-color: #f8caca;
+  border-radius: 999px;
+  padding: 12px 12px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #221c43;
+  font-family: "NotoSansJp-Bold", sans-serif;
+  font-size: 28px;
+}
+

@@ -1,0 +1,74 @@
+.page-header-section {
+  padding: 36px;
+  display: flex;
+  align-items: center; /* ensures equal height */
+  justify-content: center;
+  gap: 24px;
+}
+
+.page-header-section > img:first-child {
+  width: 40%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.page-header-section > img:nth-child(2) {
+  align-self: center;
+  width: 48px;
+  height: 48px;
+}
+
+.page-header-container {
+  flex: 1; /* take remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #eaeaf4;
+  border: 1px solid #221c43;
+  padding: 40px 56px;
+}
+
+/*Volunteers Ovreview Section*/
+.expectation-section {
+  padding: 64px 0px 64px 81px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-shrink: 0;
+  gap: 20px;
+  justify-content: flex-end;
+}
+.expectation-l {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 50%;
+  position: relative;
+}
+.expectation-r {
+  background: #eaeaf4;
+  padding: 40px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 50%;
+  position: relative;
+}
+.register-section {
+  justify-self: center;
+}
+.contact-form {
+  background-color: #eaeaf4;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: start;
+  margin: 0 auto;
+}

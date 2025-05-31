@@ -1,0 +1,169 @@
+/*Foorter section*/
+.footer-section {
+  width: 100vw;
+  margin: 0 auto;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+/* Row container: all columns in one horizontal line */
+
+.footer-main {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; /* equal height columns */
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  margin: 0px 36px;
+  box-sizing: border-box;
+}
+
+.footer-logo-c1 {
+  flex: 1;
+  box-sizing: border-box;
+  border: 1px solid #221c43;
+  padding: 81px 20px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sns-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+/*Second Row*/
+.footer-columns {
+  flex: 1;
+  box-sizing: border-box;
+  border: 1px solid #221c43;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+}
+.footer-columns.poster-column {
+  flex: 0 0 auto; /* Do not grow/shrink */
+  padding: 0;
+  border: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end; /* Align image to right edge */
+}
+
+.footer-columns.poster-column img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: none;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1º8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.sub-activities-frame {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.sub-activities-content {
+  flex-direction: row;
+  gap: 0px;
+  display: flex;
+  color: #221c43;
+  text-align: left;
+  font-family: "NotoSansJp-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: underline;
+  position: relative;
+  align-items: flex-start;
+  position: relative;
+}
+
+.mainDesign24 {
+  position: relative;
+}
+
+.lower-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+
+.lower-footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  margin: 30px;
+  gap: 32px;
+  position: relative;
+}
+.name {
+  text-decoration: underline;
+}
+.name-holder {
+  display: block; /* Remove flex */
+  width: auto; /* Let it size naturally */
+  text-align: center; /* Center the content */
+  margin: 0 auto; /* Center the block itself if needed */
+}
+@media (max-width: 992px) {
+  .footer-main {
+    flex-wrap: wrap; /* Allow columns to wrap if space is limited */
+  }
+
+  .footer-columns.poster-column {
+    display: none; /* Hide the poster column first */
+  }
+
+  .footer-logo-c1, .footer-columns {
+    flex: 1 1 100%; /* Stack remaining columns vertically */
+    max-width: 100%;
+  }
+
+  .footer-logo-c1 {
+    padding: 40px 20px; /* Reduce padding for smaller screens */
+    align-items: center;
+  }
+
+  .footer-content {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .sns-icon {
+    justify-content: center;
+  }
+}

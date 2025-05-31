@@ -1,0 +1,151 @@
+
+a,
+button,
+input,
+select,
+h1,
+h2,
+h3,
+h4,
+h5,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  background: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #221c43;
+  text-align: left;
+  font-family: "NotoSansJp-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+}
+h2 {
+  color: #221c43;
+  text-align: left;
+  font-family: "Gotham-Bold", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+}
+h3{
+  color: #221c43;
+  text-align: left;
+  font-family: "NotoSansJp-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  position: relative;
+}
+.big-paragraph {
+  color: #221c43;
+  text-align: left;
+  font-family: "NotoSansJp-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+}
+p{
+  color: #221c43;
+  text-align: left;
+  font-family: "NotoSansJp-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 34px;
+  font-weight: 400;
+  position: relative;
+}
+.small-paragraph-captions {
+  color: #221c43;
+  text-align: left;
+  font-family: "NotoSansJp-Regular", sans-serif;
+  font-size: 10px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+}
+.button-circular{
+  background: #f5cfce;
+  border-radius: 40px;
+  border-style: solid;
+  border-color: #221c43;
+  border-width: 1px;
+  padding: 12px 24px 16px 24px;
+  display: inline-flex;
+  flex-direction: row;
+  gap: 2px;
+  max-width: fit-content;
+  width: auto;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+.button-circular:hover {
+  background: #221c43;
+  border-color: #221c43;
+  box-shadow: 0px 4px 8px rgba(34, 28, 67, 0.1);
+}
+.button-content {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  position: relative;
+}
+.button-text {
+  color: #221c43;
+  text-align: left;
+  font-family: "NotoSansJp-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  white-space: nowrap;
+}
+
+.button-circular:hover .button-text,
+.button-circular:hover .rightArrow {
+  color: #f5cfce;
+  filter: brightness(0) saturate(100%) invert(93%) sepia(9%) saturate(749%) hue-rotate(311deg) brightness(99%) contrast(95%);
+}
+
+.rightArrow {
+  position: relative;
+  overflow: visible;
+}
+.divider  {
+  border-style: solid;
+  border-color: #221c43;
+  border-width: 1px 0 0 0;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 0px;
+  position: relative;
+  width: 100%;
+  margin: 0px auto; 
+}
+.button-link{
+  text-decoration: underline;
+  border: 1px solid transparent;
+  padding: 16px;
+  color: #221c43;
+  text-align: left;
+  font-family: "NotoSansJp-Medium", sans-serif;
+}
+.button-link:hover {
+  border: #221c43 1px solid;
+  border-radius: 40px;
+}

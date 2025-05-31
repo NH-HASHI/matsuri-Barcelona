@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matsuri2025</title>
+
+    <script>
+      let menuOpen = false;
+
+      function toggleMenu() {
+        const icon = document.getElementById("menuIcon");
+        const menu = document.getElementById("mobileMenu");
+        const toggle = document.getElementById("menuToggle");
+
+        menuOpen = !menuOpen;
+
+        if (menuOpen) {
+          icon.src = "../../../../public/images/icons/cross.svg";
+          toggle.classList.add("active");
+          menu.classList.remove("hidden");
+          toggle.classList.add("menu-open");
+        } else {
+          icon.src = "../../../../public/images/icons/3lines.svg";
+          toggle.classList.remove("active");
+          menu.classList.add("hidden");
+          toggle.classList.remove("menu-open");
+        }
+      }
+      function toggleSubmenu(id) {
+        document.getElementById(id).classList.toggle("hidden");
+      }
+
+      function loadMobileVersion() {
+        if (window.innerWidth >= 700) {
+          window.location.href =
+            "../../../../public/views/desktop/en/commingSoon.html";
+        }
+      }
+      window.addEventListener("resize", loadMobileVersion);
+    </script>
+    <link
+      rel="icon"
+      href="../../../../public/images/Logo-azul.png"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../../public/styles/mobile/menu-drop.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../../public/styles/mobile/mobile-footer.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../../public/styles/mobile/mobile-recurring.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../../public/styles/mobile/commingSoon.css"
+    />
+    <link rel="stylesheet" href="../../../../public/styles/mobile/faq.css" />
+  </head>
+
+  <body>
+    <header class="mobile-header">
+      <div class="header-top">
+        <img src="../../../../public/images/Logo.png" alt="Matsuri Logo" class="logo" />
+        <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+          Menu
+          <img
+            id="menuIcon"
+            src="../../../../public/images/icons/3lines.svg"
+            alt="Menu Icon"
+            class="menu-icon"
+          />
+        </div>
+      </div>
+
+      <nav class="mobile-menu hidden" id="mobileMenu">
+        <ul>
+          <li class="section-header">
+            <button
+              class="submenu-toggle"
+              onclick="toggleSubmenu('activities')"
+            >
+              Activities 2025
+              <img src="../../../../public/images/icons/down-arrow.svg" alt="" />
+            </button>
+            <ul class="submenu hidden" id="activities">
+              <li><a href="../../../../public/views/mobile/en/commingSoon.html">Program 2025</a></li>
+              <li><a href="../../../../public/views/mobile/en/commingSoon.html">The Performance</a></li>
+              <li><a href="../../../../public/views/mobile/en/commingSoon.html">The Booths</a></li>
+              <li><a href="../../../../public/views/mobile/en/commingSoon.html">Kid's Activities</a></li>
+              <li><a href="../../../../public/views/mobile/en/commingSoon.html">Food Experience</a></li>
+            </ul>
+          </li>
+          <li><a href="../../../../public/views/mobile/en/commingSoon.html">About MATSURI</a></li>
+          <li><a href="../../../../public/views/mobile/en/commingSoon.html">Getting There</a></li>
+          <li><a href="../../../../public/views/mobile/en/commingSoon.html">Contact</a></li>
+          <li class="highlight">
+            <button class="submenu-toggle" onclick="toggleSubmenu('support')">
+              Support us
+              <img src="../../../../public/images/icons/down-arrow.svg" alt="" />
+            </button>
+            <ul class="submenu hidden" id="support">
+              <li><a href="../../../../public/views/mobile/en/volunteer.html">Volunteer</a></li>
+              <li><a href="../../../../public/views/mobile/en/commingSoon.html">Crowdfunding</a></li>
+              <li><a href="../../../../public/views/mobile/en/commingSoon.html">Sponsors</a></li>
+            </ul>
+          </li>
+          <li id="ticket-link">
+            <a href="https://entradium.com/es/events/festival-matsuri-barcelona-2025/sessions/21-06-2025-12-00-moll-de-la-fusta?fbclid=PAZXh0bgNhZW0CMTEAAaeVvUXKt_AFzm_dH2RPrRsgsZ8AEohvJxk3TXWqBkMB8Q2ULgurOON9yG9Pdg_aem_RIQ-NCzzesG2P1H8oLE_5g"> Get Your Ticket </a>
+          </li>
+        </ul>
+        <div class="language-selector">
+          <a href="../../../../public/views/mobile/en/index.html">ENGLISH</a>
+          <a href="../../../../public/views/mobile/es/index.html">CASTELLANO</a>
+        </div>
+      </nav>
+    </header>
+    <div class="divider"></div>
+    <div class="page-header-section">
+      <img src="../../../../public/images/Logo-azul.png" alt="">
+      <div class="page-header-container">
+          <h1>COMMING SOON</h1>
+          <h3 class="page-sub-description">
+             COMMING SOON
+          </h3>
+      </div>
+      <img src="../../../../public/images/Logo-azul.png" alt="">
+    </div>
+  <div class="footer">
+    <div class="footer-top">
+      <a href="../../../../public/views/mobile/en/index.html">
+        <img src="../../../../public/images/Logo.png" alt="Matsuri Logo" class="logo" />  
+      </a>
+      <a class="button-circular" href="https://entradium.com/es/events/festival-matsuri-barcelona-2025/sessions/21-06-2025-12-00-moll-de-la-fusta?fbclid=PAZXh0bgNhZW0CMTEAAaeVvUXKt_AFzm_dH2RPrRsgsZ8AEohvJxk3TXWqBkMB8Q2ULgurOON9yG9Pdg_aem_RIQ-NCzzesG2P1H8oLE_5g">
+        <div class="button-content">
+          <div class="button-text" style="font-weight: 800">
+            Buy Your Tickets Now
+          </div>
+          <img class
+            ="rightArrow"
+            src="../../../../public/images/icons/right-arrow.svg"
+          />
+        </div>
+      </a>
+      <div class="sns-icon">
+        <a href="https://www.instagram.com/matsuribarcelona/">
+          <img src="../../../../public/images/icons/insta.svg" alt="" />
+        </a>
+        <a href="https://www.youtube.com/@MATSURI-Barcelona/videos">
+          <img src="../../../../public/images/icons/youtube.svg" alt="" />
+        </a>
+        <a href="https://www.facebook.com/matsurijapaninbarcelona">
+          <img src="../../../../public/images/icons/facebook.svg" alt="" />
+        </a>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="footer-middle">
+      <div class="footer-columns">
+        <div class="footer-content">
+          <div class="big-paragraph">Activities 2025</div>
+          <div class="sub-activities-frame">
+            <a href="../../../../public/views/mobile/en/commingSoon.html" class="sub-activities-content">Program 2025</a>
+            <a href="../../../../public/views/mobile/en/commingSoon.html" class="sub-activities-content">The Performers</a>
+            <a href="../../../../public/views/mobile/en/commingSoon.html" class="sub-activities-content">Kids Activties</a>
+            <a href="../../../../public/views/mobile/en/commingSoon.html" class="sub-activities-content">Booths</a>
+            <a href="../../../../public/views/mobile/en/commingSoon.html" class="sub-activities-content">Food Experience</a>
+            <a href="../../../../public/views/mobile/en/commingSoon.html" class="sub-activities-content">Artists</a>
+          </div>
+          <br /><br />
+          <div class="sub-activities-frame">
+            <a href="../../../../public/views/mobile/en/commingSoon.html" class="sub-activities-content">About</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-columns">
+        <div class="footer-content">
+          <div class="big-paragraph">Support Us</div>
+          <div class="sub-activities-frame">
+            <a
+              href="../../../../public/views/mobile/en/volunteer.html"
+              class="sub-activities-content"
+              >Volunteering</a
+            >
+            <a href="../../../../public/views/mobile/en/commingSoon.html" class="sub-activities-content">Crowdfunding</a>
+            <a href="../../../../public/views/mobile/en/commingSoon.html" class="sub-activities-content">Sponsorships</a>
+          </div>
+          <br /><a href="#" class="sub-activities-content">Getting there</a>
+          <br /><a
+            href="../../../../public/views/mobile/en/commingSoon.html"
+            class="sub-activities-content"
+            >Contact Us</a
+          >
+          <br />
+          <div class="sub-activities-frame">
+            <a href="../../../../public/views/mobile/en/commingSoon.html" class="sub-activities-content">Privacy Policy</a>
+            <a href="../../../../public/views/mobile/en/commingSoon.html" class="sub-activities-content">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="lower-footer">
+      <div class="footer-row">
+        <img src="../../../../public/images/bcn-logo/bcn-blue1.png" alt="" />
+        <p class="name-holder">Designed by <span class="name">Elly</span></p>
+        <img src="../../../../public/images/bcn-logo/bcn-blue2.png" alt="" />
+      </div>
+
+      <div class="footer-row">
+        <img src="../../../../public/images/bcn-logo/bcn-blue3.png" alt="" />
+        <p class="name-holder">
+          Built by <span class="name">Naoki & Austin</span>
+        </p>
+        <img src="../../../../public/images/bcn-logo/bcn-blue4.png" alt="" />
+      </div>
+      <h1 class="footer-heading">MATSURI 2025</h1>
+    </div>
+  </div>
+  </body>
+</html>

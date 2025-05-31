@@ -1,0 +1,81 @@
+.faq-section {
+  padding: 64px 24px; /* ✅ add horizontal padding */
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.shrink-section {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.shrink-row {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #221c43;
+  border-top: 1px solid #221c43; /* ✅ divider between rows */
+  background: #fff;
+}
+
+.shrink-show-always {
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.shrink-title {
+  color: #221c43;
+  font-family: "NotoSansJp-Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  flex: 1;
+  text-align: left;
+}
+
+.plus-minus-sign-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.plus-sign,
+.minus-sign {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #221c43;
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: #f5cfce;
+}
+
+.minus-sign {
+  display: none;
+  background-color: #fcf4f4;
+}
+
+.shrink-content {
+  display: none;
+  padding: 0 24px 24px 24px; /* ✅ contained padding */
+  background: #fcf4f4;
+}
+
+.shrink-answer-text {
+  color: #221c43;
+  font-size: 16px;
+  line-height: 1.6;
+}

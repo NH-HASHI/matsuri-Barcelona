@@ -1,0 +1,26 @@
+.page-header-section{
+    background: #EAEAF4;
+    padding: 64px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.page-header-container{
+    border-style: solid;
+    border-color: #221c43;
+    background: #FFFFFF;
+    border-width: 1px;
+    padding: 40px 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+}

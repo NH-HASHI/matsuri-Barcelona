@@ -1,0 +1,119 @@
+.page-header-section {
+  background: #eaeaf4;
+  padding: 64px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.page-header-container {
+  border-style: solid;
+  border-color: #221c43;
+  background: #ffffff;
+  border-width: 1px;
+  padding: 40px 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+}
+/* All Departments Contact Section*/
+.department-contact-section {
+  padding: 64px 0px 64px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+.dept-two-columns {
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+}
+.dept-contact-l {
+  position: relative;
+}
+.contact-row {
+  width: 630px;
+}
+.dept-container {
+  padding: 40px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.dept-name {
+  color: #c1272d;
+  text-align: left;
+  font-family: "MavenPro-Bold", sans-serif;
+  font-size: 32px;
+  font: medium;
+  position: relative;
+}
+.arrow-minus {
+  display: flex;
+  align-items: center;
+}
+
+.shrink-content {
+  display: none;
+}
+.shrink-answer {
+  flex-shrink: 0;
+  position: relative;
+}
+.department-contact-section {
+  padding: 64px 24px; /* Added side padding */
+  max-width: 1280px; /* Prevents too-wide spread */
+  margin: 0 auto;
+}
+
+.dept-two-columns {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  width: 100%;
+  justify-content: center;
+}
+
+.dept-contact-l {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-row {
+  width: 100%; /* Changed from fixed width to responsive */
+  background-color: white;
+  border: none;
+  border-top: 1px solid #221c43;
+
+}
+
+.dept-container {
+  padding: 40px 24px; /* Increased horizontal padding */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shrink-content {
+  border: none;
+  background: #fcf4f4;
+  padding: 16px 24px;
+  width: 100%;
+}
