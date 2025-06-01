@@ -17,7 +17,9 @@ h5,
   -webkit-font-smoothing: antialiased;
 }
 
-menu, ol, ul {
+menu,
+ol,
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -29,9 +31,9 @@ h1 {
   font-family: "NotoSansJp-Regular", sans-serif;
   font-size: 64px;
   font-weight: 700;
-  position: relative;/* Ensure enough vertical spacing */            /* Add vertical space */
-  display: block;            /* Ensures it stacks */
-
+  position: relative; /* Ensure enough vertical spacing */ /* Add vertical space */
+  display: inline-block;
+  line-height: 1.2;
 }
 h2 {
   color: #221c43;
@@ -42,7 +44,7 @@ h2 {
   font-weight: 700;
   position: relative;
 }
-h3{
+h3 {
   color: #221c43;
   text-align: left;
   font-family: "NotoSansJp-Medium", sans-serif;
@@ -59,7 +61,7 @@ h3{
   font-weight: 400;
   position: relative;
 }
-p{
+p {
   color: #221c43;
   text-align: left;
   font-family: "NotoSansJp-Regular", sans-serif;
@@ -80,7 +82,7 @@ p{
   align-items: flex-end;
   justify-content: flex-start;
 }
-.button-circular{
+.button-circular {
   background: #f5cfce;
   border-radius: 40px;
   border-style: solid;
@@ -120,14 +122,15 @@ p{
 .button-circular:hover .button-text,
 .button-circular:hover .rightArrow {
   color: #f5cfce;
-  filter: brightness(0) saturate(100%) invert(93%) sepia(9%) saturate(749%) hue-rotate(311deg) brightness(99%) contrast(95%);
+  filter: brightness(0) saturate(100%) invert(93%) sepia(9%) saturate(749%)
+    hue-rotate(311deg) brightness(99%) contrast(95%);
 }
 
 .rightArrow {
   position: relative;
   overflow: visible;
 }
-.divider  {
+.divider {
   border-style: solid;
   border-color: #221c43;
   border-width: 1px 0 0 0;
@@ -136,9 +139,9 @@ p{
   height: 0px;
   position: relative;
   width: 100%;
-  margin: 0px auto; 
+  margin: 0px auto;
 }
-.button-link{
+.button-link {
   text-decoration: underline;
   border: 1px solid transparent;
   padding: 16px;
