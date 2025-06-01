@@ -7,7 +7,7 @@
   <script>
     function loadMobileVersion() {
       // Redirect only if on desktop version and not already on mobile
-      const isMobile = window.innerWidth <= 720;
+      const isMobile = window.innerWidth <= 700;
       const isAlreadyMobile = window.location.href.includes('/mobile/');
 
       if (isMobile && !isAlreadyMobile) {
