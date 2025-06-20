@@ -127,7 +127,6 @@ body {
   border: 1px solid #221c43;
 }
 
-
 .activitiesDropContent,
 .aboutDropContent,
 .supportDropContent {
@@ -186,4 +185,31 @@ body {
 
 #ticket-enhanced:hover a {
   color: #f5cfce;
+}
+
+.sponsor-slider {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+  background: #fff;
+}
+
+.slider-track {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 25s linear infinite;
+}
+
+.slider-track img {
+  height: 100px;
+  vertical-align: middle;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }

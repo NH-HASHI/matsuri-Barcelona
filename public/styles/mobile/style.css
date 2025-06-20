@@ -111,3 +111,31 @@ a:visited {
   box-sizing: border-box;
   display: block;
 }
+
+.sponsor-slider {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+  background: #fff;
+  align-items: center;
+}
+
+.slider-track {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 25s linear infinite;
+}
+
+.slider-track img {
+  height: 100px;
+  vertical-align: middle;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
