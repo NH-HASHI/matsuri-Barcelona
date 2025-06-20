@@ -196,6 +196,7 @@ body {
 .slider-track {
   display: inline-block;
   white-space: nowrap;
+  margin: 10px 0px;
   animation: scroll-left 25s linear infinite;
 }
 
