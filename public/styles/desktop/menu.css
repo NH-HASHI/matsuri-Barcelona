@@ -204,7 +204,8 @@ body {
   height: 100px;
   vertical-align: middle;
 }
-
+#big-sponsor {
+  height: 180px;}
 @keyframes scroll-left {
   0% {
     transform: translateX(0);
